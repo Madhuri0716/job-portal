@@ -11,9 +11,9 @@ connectdb();//connect to database
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 
-app.use('/',(req,res)=>{
-    res.status(200).send("server is running fine");
-})
+// app.use('/',(req,res)=>{
+//     res.status(200).send("server is running fine");
+// })
 app.get('api/home',(req,res)=>{
     res.status(200).send("home page route checking");
 })
