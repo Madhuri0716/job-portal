@@ -13,7 +13,6 @@ export const fetchJobsFromAPI = async (titleFilter = 'data science', locationFil
     const options = {
       method: 'GET',
       url: RAPIDAPI_URL,
-      
       params: {
         limit: '5',
         offset: '0',
